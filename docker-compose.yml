@@ -32,3 +32,10 @@ services:
       - postgres
     ports:
       - "8089:8089"
+    command: air
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
